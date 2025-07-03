@@ -1,43 +1,88 @@
-<style>
-
-h2 {
-
-color: greenyellow;
-
-}
-
-h1 {
-
-color: blue;
-
-}
-
-</style>
-<ol>
-	<li>hello world<?li>
-	<li>hello world<?li>
-	<li>hello world<?li>
-	<li>hello world<?li>
-<ul>
-	<li>hello world<?li>
-	<li>hello world<?li>
-	<li>hello world<?li>
-	<li>hello world<?li>
-
-
-
-**<h1> 내 생에 첫 홈페이지</h1>**
-
-**<h2> 내 생에 첫 홈페이지</h2>**
-
-**<h3> 내 생에 첫 홈페이지</h3>**
-
-**<h4> 내 생에 첫 홈페이지</h4>**
-
-**<h5> 내 생에 첫 홈페이지</h5>**
-
-**<h6> 내 생에 첫 홈페이지</h6>**
-
-**<p>제주대에서 실습한 홈페이지 만들기</p>**
-
-<img src=””>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>내 생애 첫 홈페이지</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      color: #3266cc;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: greenyellow;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      text-align: left;
+    }
+    ul li::before {
+      content: "•";
+      color: #3266cc;
+      display: inline-block;
+      width: 1em;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://via.placeholder.com/120" alt="프로필 사진" class="profile-img">
+    <h1>김민재</h1>
+    <h2>Visual Design 전공생</h2>
+    <p>"창의적인 시각 언어로 세상을 더 아름답게"
+    </p>
+    <ul>
+      <li>관심 분야: 웹 디자인, 모션 그래픽, 브랜딩</li>
+      <li>취미: 축구, 일러스트 그리기</li>
+      <li>연락처: example@domain.com</li>
+    </ul>
+    <div class="footer">© 2025 김민재 All Rights Reserved</div>
+  </div>
+</body>
+</html>
